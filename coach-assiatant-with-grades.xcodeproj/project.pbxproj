@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84469F2E28269F0000E570B9 /* FieldTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84469F2D28269F0000E570B9 /* FieldTracker.swift */; };
+		84469F3028269F1800E570B9 /* GoalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84469F2F28269F1800E570B9 /* GoalTracker.swift */; };
+		84469F322826B55900E570B9 /* trackingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84469F312826B55900E570B9 /* trackingButton.swift */; };
+		84469F342826C49400E570B9 /* FieldTrackerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84469F332826C49400E570B9 /* FieldTrackerData.swift */; };
+		84469F362826D01B00E570B9 /* GoalkeeperTrackerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84469F352826D01B00E570B9 /* GoalkeeperTrackerData.swift */; };
+		8497248A27F9D8520060B1F8 /* UpcomingGamePlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497248827F9D8510060B1F8 /* UpcomingGamePlayerCell.swift */; };
+		8497248B27F9D8520060B1F8 /* UpcomingGamePlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8497248927F9D8520060B1F8 /* UpcomingGamePlayerCell.xib */; };
+		8498320827F8713A00B103AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8498320727F8713A00B103AD /* Assets.xcassets */; };
+		8498323427F871E300B103AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8498321D27F871E200B103AD /* GoogleService-Info.plist */; };
+		8498325927F8D5D600B103AD /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498325827F8D5D600B103AD /* MyNavigationController.swift */; };
+		8498329927F8DDAB00B103AD /* trainingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498326E27F8DDAA00B103AD /* trainingTableCell.swift */; };
+		8498329A27F8DDAB00B103AD /* upcomingGameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498326F27F8DDAA00B103AD /* upcomingGameTableCell.swift */; };
+		8498329B27F8DDAB00B103AD /* completeGameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327027F8DDAA00B103AD /* completeGameTableCell.swift */; };
+		8498329C27F8DDAB00B103AD /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327127F8DDAA00B103AD /* PlayerCell.swift */; };
+		8498329D27F8DDAB00B103AD /* PlayerProfileGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327227F8DDAA00B103AD /* PlayerProfileGameCell.swift */; };
+		8498329E27F8DDAB00B103AD /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327327F8DDAA00B103AD /* GoalCell.swift */; };
+		8498329F27F8DDAB00B103AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8498327527F8DDAA00B103AD /* LaunchScreen.storyboard */; };
+		849832A027F8DDAB00B103AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8498327727F8DDAA00B103AD /* Main.storyboard */; };
+		849832A127F8DDAB00B103AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327A27F8DDAB00B103AD /* AppDelegate.swift */; };
+		849832A227F8DDAB00B103AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327B27F8DDAB00B103AD /* SceneDelegate.swift */; };
+		849832A327F8DDAB00B103AD /* Init_funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327D27F8DDAB00B103AD /* Init_funcs.swift */; };
+		849832A427F8DDAB00B103AD /* Util_funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498327E27F8DDAB00B103AD /* Util_funcs.swift */; };
+		849832A527F8DDAB00B103AD /* upcomingGameTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8498328027F8DDAB00B103AD /* upcomingGameTableCell.xib */; };
+		849832A627F8DDAB00B103AD /* PlayerProfileGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8498328127F8DDAB00B103AD /* PlayerProfileGameCell.xib */; };
+		849832A727F8DDAB00B103AD /* trainingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8498328227F8DDAB00B103AD /* trainingTableCell.xib */; };
+		849832A827F8DDAB00B103AD /* GoalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8498328327F8DDAB00B103AD /* GoalCell.xib */; };
+		849832A927F8DDAB00B103AD /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8498328427F8DDAB00B103AD /* PlayerCell.xib */; };
+		849832AA27F8DDAB00B103AD /* completeGameTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8498328527F8DDAB00B103AD /* completeGameTableCell.xib */; };
+		849832AB27F8DDAB00B103AD /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328727F8DDAB00B103AD /* Goal.swift */; };
+		849832AC27F8DDAB00B103AD /* training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328827F8DDAB00B103AD /* training.swift */; };
+		849832AD27F8DDAB00B103AD /* completeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328927F8DDAB00B103AD /* completeGame.swift */; };
+		849832AE27F8DDAB00B103AD /* upcomingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328A27F8DDAB00B103AD /* upcomingGame.swift */; };
+		849832AF27F8DDAB00B103AD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328B27F8DDAB00B103AD /* Player.swift */; };
+		849832B027F8DDAB00B103AD /* trainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328D27F8DDAB00B103AD /* trainingTableViewController.swift */; };
+		849832B127F8DDAB00B103AD /* trainingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328E27F8DDAB00B103AD /* trainingListViewController.swift */; };
+		849832B227F8DDAB00B103AD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498328F27F8DDAB00B103AD /* GameViewController.swift */; };
+		849832B327F8DDAB00B103AD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329027F8DDAB00B103AD /* RootViewController.swift */; };
+		849832B427F8DDAB00B103AD /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329127F8DDAB00B103AD /* PlayerTableViewController.swift */; };
+		849832B527F8DDAB00B103AD /* upcomingGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329227F8DDAB00B103AD /* upcomingGamesViewController.swift */; };
+		849832B627F8DDAB00B103AD /* trainingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329327F8DDAB00B103AD /* trainingInfoViewController.swift */; };
+		849832B727F8DDAB00B103AD /* playerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329427F8DDAB00B103AD /* playerProfileViewController.swift */; };
+		849832B827F8DDAB00B103AD /* completeGamesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329627F8DDAB00B103AD /* completeGamesTable.swift */; };
+		849832B927F8DDAB00B103AD /* sideMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329727F8DDAB00B103AD /* sideMenuTableController.swift */; };
+		849832BA27F8DDAB00B103AD /* upcomingGamePlayerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498329827F8DDAB00B103AD /* upcomingGamePlayerTable.swift */; };
+		84F2718C282316A500ADE488 /* SetOnClickListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2718B282316A500ADE488 /* SetOnClickListener.swift */; };
+		FE068901358EB9CB31D6333E /* Pods_coach_assiatant_with_grades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE291733AE6D305EAAB062 /* Pods_coach_assiatant_with_grades.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3684E641FDE9D3282BC9862E /* Pods-coach-assiatant-with-grades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coach-assiatant-with-grades.debug.xcconfig"; path = "Target Support Files/Pods-coach-assiatant-with-grades/Pods-coach-assiatant-with-grades.debug.xcconfig"; sourceTree = "<group>"; };
+		70DD4B5D80C88B3A45A72B63 /* Pods-coach-assiatant-with-grades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coach-assiatant-with-grades.release.xcconfig"; path = "Target Support Files/Pods-coach-assiatant-with-grades/Pods-coach-assiatant-with-grades.release.xcconfig"; sourceTree = "<group>"; };
+		84469F2D28269F0000E570B9 /* FieldTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTracker.swift; sourceTree = "<group>"; };
+		84469F2F28269F1800E570B9 /* GoalTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTracker.swift; sourceTree = "<group>"; };
+		84469F312826B55900E570B9 /* trackingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingButton.swift; sourceTree = "<group>"; };
+		84469F332826C49400E570B9 /* FieldTrackerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTrackerData.swift; sourceTree = "<group>"; };
+		84469F352826D01B00E570B9 /* GoalkeeperTrackerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalkeeperTrackerData.swift; sourceTree = "<group>"; };
+		8475BE2E27F8E27100A1730D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8497248827F9D8510060B1F8 /* UpcomingGamePlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingGamePlayerCell.swift; sourceTree = "<group>"; };
+		8497248927F9D8520060B1F8 /* UpcomingGamePlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingGamePlayerCell.xib; sourceTree = "<group>"; };
+		849831FB27F8713600B103AD /* coach-assiatant-with-grades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coach-assiatant-with-grades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8498320727F8713A00B103AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8498321D27F871E200B103AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8498325827F8D5D600B103AD /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		8498326E27F8DDAA00B103AD /* trainingTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trainingTableCell.swift; sourceTree = "<group>"; };
+		8498326F27F8DDAA00B103AD /* upcomingGameTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upcomingGameTableCell.swift; sourceTree = "<group>"; };
+		8498327027F8DDAA00B103AD /* completeGameTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = completeGameTableCell.swift; sourceTree = "<group>"; };
+		8498327127F8DDAA00B103AD /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		8498327227F8DDAA00B103AD /* PlayerProfileGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProfileGameCell.swift; sourceTree = "<group>"; };
+		8498327327F8DDAA00B103AD /* GoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		8498327627F8DDAA00B103AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8498327827F8DDAA00B103AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8498327A27F8DDAB00B103AD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8498327B27F8DDAB00B103AD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8498327D27F8DDAB00B103AD /* Init_funcs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init_funcs.swift; sourceTree = "<group>"; };
+		8498327E27F8DDAB00B103AD /* Util_funcs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util_funcs.swift; sourceTree = "<group>"; };
+		8498328027F8DDAB00B103AD /* upcomingGameTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = upcomingGameTableCell.xib; sourceTree = "<group>"; };
+		8498328127F8DDAB00B103AD /* PlayerProfileGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerProfileGameCell.xib; sourceTree = "<group>"; };
+		8498328227F8DDAB00B103AD /* trainingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = trainingTableCell.xib; sourceTree = "<group>"; };
+		8498328327F8DDAB00B103AD /* GoalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalCell.xib; sourceTree = "<group>"; };
+		8498328427F8DDAB00B103AD /* PlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		8498328527F8DDAB00B103AD /* completeGameTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = completeGameTableCell.xib; sourceTree = "<group>"; };
+		8498328727F8DDAB00B103AD /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		8498328827F8DDAB00B103AD /* training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = training.swift; sourceTree = "<group>"; };
+		8498328927F8DDAB00B103AD /* completeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = completeGame.swift; sourceTree = "<group>"; };
+		8498328A27F8DDAB00B103AD /* upcomingGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upcomingGame.swift; sourceTree = "<group>"; };
+		8498328B27F8DDAB00B103AD /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8498328D27F8DDAB00B103AD /* trainingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trainingTableViewController.swift; sourceTree = "<group>"; };
+		8498328E27F8DDAB00B103AD /* trainingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trainingListViewController.swift; sourceTree = "<group>"; };
+		8498328F27F8DDAB00B103AD /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8498329027F8DDAB00B103AD /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8498329127F8DDAB00B103AD /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
+		8498329227F8DDAB00B103AD /* upcomingGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upcomingGamesViewController.swift; sourceTree = "<group>"; };
+		8498329327F8DDAB00B103AD /* trainingInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trainingInfoViewController.swift; sourceTree = "<group>"; };
+		8498329427F8DDAB00B103AD /* playerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playerProfileViewController.swift; sourceTree = "<group>"; };
+		8498329627F8DDAB00B103AD /* completeGamesTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = completeGamesTable.swift; sourceTree = "<group>"; };
+		8498329727F8DDAB00B103AD /* sideMenuTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenuTableController.swift; sourceTree = "<group>"; };
+		8498329827F8DDAB00B103AD /* upcomingGamePlayerTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upcomingGamePlayerTable.swift; sourceTree = "<group>"; };
+		84F2718B282316A500ADE488 /* SetOnClickListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOnClickListener.swift; sourceTree = "<group>"; };
+		D0DE291733AE6D305EAAB062 /* Pods_coach_assiatant_with_grades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coach_assiatant_with_grades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849831F827F8713600B103AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE068901358EB9CB31D6333E /* Pods_coach_assiatant_with_grades.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5702D1003452D2F403046F48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0DE291733AE6D305EAAB062 /* Pods_coach_assiatant_with_grades.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84469F2C28269EDF00E570B9 /* Trackers */ = {
+			isa = PBXGroup;
+			children = (
+				84469F2D28269F0000E570B9 /* FieldTracker.swift */,
+				84469F2F28269F1800E570B9 /* GoalTracker.swift */,
+			);
+			path = Trackers;
+			sourceTree = "<group>";
+		};
+		849831F227F8713600B103AD = {
+			isa = PBXGroup;
+			children = (
+				8498326D27F8DDAA00B103AD /* Cell Controllers */,
+				8498327F27F8DDAB00B103AD /* Cell Views */,
+				8498327927F8DDAB00B103AD /* Delegates */,
+				8498327C27F8DDAB00B103AD /* Helpers */,
+				8498328627F8DDAB00B103AD /* Models */,
+				8498327427F8DDAA00B103AD /* Storyboards */,
+				8498329527F8DDAB00B103AD /* TableControllers */,
+				8498328C27F8DDAB00B103AD /* View Controllers */,
+				849831FD27F8713600B103AD /* coach-assiatant-with-grades */,
+				849831FC27F8713600B103AD /* Products */,
+				A99B23F10E9832FAA9F919D4 /* Pods */,
+				5702D1003452D2F403046F48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		849831FC27F8713600B103AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849831FB27F8713600B103AD /* coach-assiatant-with-grades.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849831FD27F8713600B103AD /* coach-assiatant-with-grades */ = {
+			isa = PBXGroup;
+			children = (
+				8475BE2E27F8E27100A1730D /* Info.plist */,
+				8498325827F8D5D600B103AD /* MyNavigationController.swift */,
+				8498321D27F871E200B103AD /* GoogleService-Info.plist */,
+				8498320727F8713A00B103AD /* Assets.xcassets */,
+			);
+			path = "coach-assiatant-with-grades";
+			sourceTree = "<group>";
+		};
+		8498326D27F8DDAA00B103AD /* Cell Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8497248827F9D8510060B1F8 /* UpcomingGamePlayerCell.swift */,
+				8498326E27F8DDAA00B103AD /* trainingTableCell.swift */,
+				8498326F27F8DDAA00B103AD /* upcomingGameTableCell.swift */,
+				8498327027F8DDAA00B103AD /* completeGameTableCell.swift */,
+				8498327127F8DDAA00B103AD /* PlayerCell.swift */,
+				8498327227F8DDAA00B103AD /* PlayerProfileGameCell.swift */,
+				8498327327F8DDAA00B103AD /* GoalCell.swift */,
+			);
+			path = "Cell Controllers";
+			sourceTree = "<group>";
+		};
+		8498327427F8DDAA00B103AD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8498327527F8DDAA00B103AD /* LaunchScreen.storyboard */,
+				8498327727F8DDAA00B103AD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8498327927F8DDAB00B103AD /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8498327A27F8DDAB00B103AD /* AppDelegate.swift */,
+				8498327B27F8DDAB00B103AD /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		8498327C27F8DDAB00B103AD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8498327D27F8DDAB00B103AD /* Init_funcs.swift */,
+				8498327E27F8DDAB00B103AD /* Util_funcs.swift */,
+				84F2718B282316A500ADE488 /* SetOnClickListener.swift */,
+				84469F312826B55900E570B9 /* trackingButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8498327F27F8DDAB00B103AD /* Cell Views */ = {
+			isa = PBXGroup;
+			children = (
+				8498328027F8DDAB00B103AD /* upcomingGameTableCell.xib */,
+				8498328127F8DDAB00B103AD /* PlayerProfileGameCell.xib */,
+				8498328227F8DDAB00B103AD /* trainingTableCell.xib */,
+				8498328327F8DDAB00B103AD /* GoalCell.xib */,
+				8498328427F8DDAB00B103AD /* PlayerCell.xib */,
+				8498328527F8DDAB00B103AD /* completeGameTableCell.xib */,
+				8497248927F9D8520060B1F8 /* UpcomingGamePlayerCell.xib */,
+			);
+			path = "Cell Views";
+			sourceTree = "<group>";
+		};
+		8498328627F8DDAB00B103AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8498328727F8DDAB00B103AD /* Goal.swift */,
+				8498328827F8DDAB00B103AD /* training.swift */,
+				8498328927F8DDAB00B103AD /* completeGame.swift */,
+				8498328A27F8DDAB00B103AD /* upcomingGame.swift */,
+				8498328B27F8DDAB00B103AD /* Player.swift */,
+				84469F332826C49400E570B9 /* FieldTrackerData.swift */,
+				84469F352826D01B00E570B9 /* GoalkeeperTrackerData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8498328C27F8DDAB00B103AD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8498328D27F8DDAB00B103AD /* trainingTableViewController.swift */,
+				84469F2C28269EDF00E570B9 /* Trackers */,
+				8498328E27F8DDAB00B103AD /* trainingListViewController.swift */,
+				8498328F27F8DDAB00B103AD /* GameViewController.swift */,
+				8498329027F8DDAB00B103AD /* RootViewController.swift */,
+				8498329127F8DDAB00B103AD /* PlayerTableViewController.swift */,
+				8498329227F8DDAB00B103AD /* upcomingGamesViewController.swift */,
+				8498329327F8DDAB00B103AD /* trainingInfoViewController.swift */,
+				8498329427F8DDAB00B103AD /* playerProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8498329527F8DDAB00B103AD /* TableControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8498329627F8DDAB00B103AD /* completeGamesTable.swift */,
+				8498329727F8DDAB00B103AD /* sideMenuTableController.swift */,
+				8498329827F8DDAB00B103AD /* upcomingGamePlayerTable.swift */,
+			);
+			path = TableControllers;
+			sourceTree = "<group>";
+		};
+		A99B23F10E9832FAA9F919D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3684E641FDE9D3282BC9862E /* Pods-coach-assiatant-with-grades.debug.xcconfig */,
+				70DD4B5D80C88B3A45A72B63 /* Pods-coach-assiatant-with-grades.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849831FA27F8713600B103AD /* coach-assiatant-with-grades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8498320F27F8713A00B103AD /* Build configuration list for PBXNativeTarget "coach-assiatant-with-grades" */;
+			buildPhases = (
+				C3DC2CFE5724873FE13D2E22 /* [CP] Check Pods Manifest.lock */,
+				849831F727F8713600B103AD /* Sources */,
+				849831F827F8713600B103AD /* Frameworks */,
+				849831F927F8713600B103AD /* Resources */,
+				9B81C817123DD69BFA061440 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "coach-assiatant-with-grades";
+			productName = "coach-assiatant-with-grades";
+			productReference = 849831FB27F8713600B103AD /* coach-assiatant-with-grades.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849831F327F8713600B103AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					849831FA27F8713600B103AD = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 849831F627F8713600B103AD /* Build configuration list for PBXProject "coach-assiatant-with-grades" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849831F227F8713600B103AD;
+			productRefGroup = 849831FC27F8713600B103AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849831FA27F8713600B103AD /* coach-assiatant-with-grades */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849831F927F8713600B103AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849832A527F8DDAB00B103AD /* upcomingGameTableCell.xib in Resources */,
+				849832A727F8DDAB00B103AD /* trainingTableCell.xib in Resources */,
+				849832A027F8DDAB00B103AD /* Main.storyboard in Resources */,
+				8498329F27F8DDAB00B103AD /* LaunchScreen.storyboard in Resources */,
+				849832A827F8DDAB00B103AD /* GoalCell.xib in Resources */,
+				8498323427F871E300B103AD /* GoogleService-Info.plist in Resources */,
+				8497248B27F9D8520060B1F8 /* UpcomingGamePlayerCell.xib in Resources */,
+				849832A627F8DDAB00B103AD /* PlayerProfileGameCell.xib in Resources */,
+				849832AA27F8DDAB00B103AD /* completeGameTableCell.xib in Resources */,
+				849832A927F8DDAB00B103AD /* PlayerCell.xib in Resources */,
+				8498320827F8713A00B103AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B81C817123DD69BFA061440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coach-assiatant-with-grades/Pods-coach-assiatant-with-grades-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coach-assiatant-with-grades/Pods-coach-assiatant-with-grades-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coach-assiatant-with-grades/Pods-coach-assiatant-with-grades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DC2CFE5724873FE13D2E22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coach-assiatant-with-grades-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849831F727F8713600B103AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849832BA27F8DDAB00B103AD /* upcomingGamePlayerTable.swift in Sources */,
+				849832A427F8DDAB00B103AD /* Util_funcs.swift in Sources */,
+				849832B827F8DDAB00B103AD /* completeGamesTable.swift in Sources */,
+				849832B027F8DDAB00B103AD /* trainingTableViewController.swift in Sources */,
+				849832A127F8DDAB00B103AD /* AppDelegate.swift in Sources */,
+				84469F342826C49400E570B9 /* FieldTrackerData.swift in Sources */,
+				8498329A27F8DDAB00B103AD /* upcomingGameTableCell.swift in Sources */,
+				849832A227F8DDAB00B103AD /* SceneDelegate.swift in Sources */,
+				849832AF27F8DDAB00B103AD /* Player.swift in Sources */,
+				849832AB27F8DDAB00B103AD /* Goal.swift in Sources */,
+				849832B627F8DDAB00B103AD /* trainingInfoViewController.swift in Sources */,
+				84469F3028269F1800E570B9 /* GoalTracker.swift in Sources */,
+				8498329B27F8DDAB00B103AD /* completeGameTableCell.swift in Sources */,
+				849832B927F8DDAB00B103AD /* sideMenuTableController.swift in Sources */,
+				849832B227F8DDAB00B103AD /* GameViewController.swift in Sources */,
+				84469F362826D01B00E570B9 /* GoalkeeperTrackerData.swift in Sources */,
+				84469F2E28269F0000E570B9 /* FieldTracker.swift in Sources */,
+				849832AD27F8DDAB00B103AD /* completeGame.swift in Sources */,
+				849832B727F8DDAB00B103AD /* playerProfileViewController.swift in Sources */,
+				849832B327F8DDAB00B103AD /* RootViewController.swift in Sources */,
+				8497248A27F9D8520060B1F8 /* UpcomingGamePlayerCell.swift in Sources */,
+				849832AE27F8DDAB00B103AD /* upcomingGame.swift in Sources */,
+				849832B127F8DDAB00B103AD /* trainingListViewController.swift in Sources */,
+				8498329927F8DDAB00B103AD /* trainingTableCell.swift in Sources */,
+				849832B427F8DDAB00B103AD /* PlayerTableViewController.swift in Sources */,
+				84F2718C282316A500ADE488 /* SetOnClickListener.swift in Sources */,
+				8498325927F8D5D600B103AD /* MyNavigationController.swift in Sources */,
+				849832B527F8DDAB00B103AD /* upcomingGamesViewController.swift in Sources */,
+				8498329D27F8DDAB00B103AD /* PlayerProfileGameCell.swift in Sources */,
+				849832AC27F8DDAB00B103AD /* training.swift in Sources */,
+				8498329E27F8DDAB00B103AD /* GoalCell.swift in Sources */,
+				8498329C27F8DDAB00B103AD /* PlayerCell.swift in Sources */,
+				84469F322826B55900E570B9 /* trackingButton.swift in Sources */,
+				849832A327F8DDAB00B103AD /* Init_funcs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8498327527F8DDAA00B103AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8498327627F8DDAA00B103AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8498327727F8DDAA00B103AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8498327827F8DDAA00B103AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8498320D27F8713A00B103AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8498320E27F8713A00B103AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8498321027F8713A00B103AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3684E641FDE9D3282BC9862E /* Pods-coach-assiatant-with-grades.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6S648MSLQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "coach-assiatant-with-grades/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sfedu.coach-assiatant-with-grades";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8498321127F8713A00B103AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DD4B5D80C88B3A45A72B63 /* Pods-coach-assiatant-with-grades.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6S648MSLQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "coach-assiatant-with-grades/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sfedu.coach-assiatant-with-grades";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849831F627F8713600B103AD /* Build configuration list for PBXProject "coach-assiatant-with-grades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8498320D27F8713A00B103AD /* Debug */,
+				8498320E27F8713A00B103AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8498320F27F8713A00B103AD /* Build configuration list for PBXNativeTarget "coach-assiatant-with-grades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8498321027F8713A00B103AD /* Debug */,
+				8498321127F8713A00B103AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849831F327F8713600B103AD /* Project object */;
+}
